@@ -47,14 +47,14 @@
 
             <TextView
                 style="@style/ActionButton"
-                android:id="@+id/leftbracket_button"
+                android:id="@+id/left_bracket_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="(" />
 
             <TextView
                 style="@style/ActionButton"
-                android:id="@+id/rightbracket_button"
+                android:id="@+id/right_bracket_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text=")" />
@@ -96,7 +96,7 @@
 
             <TextView
                 style="@style/ActionButton"
-                android:id="@+id/Multiplication_button"
+                android:id="@+id/multiplication_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="*" />
@@ -168,7 +168,7 @@
 
             <TextView
                 style="@style/ActionButton"
-                android:id="@+id/Subtract_button"
+                android:id="@+id/subtract_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="-" />
@@ -183,7 +183,7 @@
 
             <TextView
                 style="@style/ActionButton"
-                android:id="@+id/Fraction_button"
+                android:id="@+id/fraction_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="." />
@@ -197,14 +197,14 @@
 
             <TextView
                 style="@style/ActionButton"
-                android:id="@+id/Back_button"
+                android:id="@+id/back_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Back" />
 
             <TextView
                 style="@style/ActionButton"
-                android:id="@+id/Equal_button"
+                android:id="@+id/equal_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="=" />
