@@ -1,8 +1,12 @@
-package com.example.kotlin_st2
+
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.kotlin_st2.R
+import java.lang.Exception
+import javax.xml.xpath.XPathExpression
 
 class MainActivity : AppCompatActivity() {
 
@@ -84,6 +88,15 @@ class MainActivity : AppCompatActivity() {
                 resultText.text = ""
             }
 
+            equalButton.setOnClickListener {
+                try {
+                    val ex = ExpressionBuilder(mathOperation)
+
+                } catch (e:Exception) {
+                    Log.d("Ошибка", "сщщбщение: ${e.message}")
+
+                }
+            }
         }
     }
 
