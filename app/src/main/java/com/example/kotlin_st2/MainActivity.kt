@@ -108,6 +108,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setTextFields(str: String) {
+        if (resultText.text != "")
+            mathOperation.text = resultText.text
         mathOperation.append(str)
         resultText.append(str)
 
