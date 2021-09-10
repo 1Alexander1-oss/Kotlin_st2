@@ -5,6 +5,7 @@ import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlin_st2.R
+import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
 import javax.xml.xpath.XPathExpression
 
@@ -90,10 +91,16 @@ class MainActivity : AppCompatActivity() {
 
             equalButton.setOnClickListener {
                 try {
-                    val ex = ExpressionBuilder(mathOperation)
+                    val ex = ExpressionBuilder(mathOperation.text.toString()).build()
+                    val result = ex.evaluate()
 
+                    val longRes = result.toLong()
+                    if(result == longRes.toDouble())
+                        resultText.text = longRes.toString()
+                    else
+                        resultText.text = result.toString()
                 } catch (e:Exception) {
-                    Log.d("Ошибка", "сщщбщение: ${e.message}")
+                    Log.d("Ошибка", "сообщение: ${e.message}")
 
                 }
             }
